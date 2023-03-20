@@ -31,7 +31,8 @@ def play_round(win_count):
     hidden_index = random.randint(0, 9)
     our_answer = progression[hidden_index]
     progression[hidden_index] = '..'
-    print (f'Question: {progression.join(" ")}')
+    progression = progression.join(" ")
+    print (f'Question: {progression)}')
     user_answer = int(prompt.string("Your answer: "))
     if our_answer == user_answer:
         print ('Correct!')
