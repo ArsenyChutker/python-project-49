@@ -6,7 +6,7 @@ import random
 def main():
     print("Welcome to the Brain Games!")
     name = welcome_user()
-    print ('Answer "yes" if given number is prime, Otherwise answer "no"')
+    print ('Answer "yes" if given number is prime, Otherwise answer "no".')
     win_count = 0
     while win_count < 3:
         win_count = play_round(win_count)
