@@ -34,7 +34,7 @@ def play_round(win_count):
         else:
             b -= a
     our_answer = b
-    print (f'Question:{a} {b}')
+    print (f'Question: {a} {b}')
     user_answer = int(prompt.string("Your answer: "))
     if our_answer == user_answer:
         print ('Correct!')
