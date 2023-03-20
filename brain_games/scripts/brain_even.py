@@ -6,7 +6,7 @@ import random
 def main():
     print("Welcome to the Brain Games!")
     name = welcome_user()
-    print ('Answer "yes" if the number is even, otherwise answer "no"')
+    print ('Answer "yes" if the number is even, otherwise answer "no".')
     win_count = 0
     while win_count < 3:
         win_count = play_round(win_count)
