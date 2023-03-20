@@ -16,7 +16,7 @@ Let's try again, {name}!""")
             break
     
     if(win_count == 3):
-        print(f"""Congratulations, {name}""")
+        print(f"""Congratulations, {name}!""")
     return
     
 def welcome_user():
