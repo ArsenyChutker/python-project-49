@@ -29,7 +29,7 @@ def play_round(win_count):
     num1 = (random.randint(0,100))
     num2 = (random.randint(0,100))
     operators = random.choice(["+","-","*"])
-    num3 = f"{num1}{operators}{num2}"
+    num3 = f"{num1} {operators} {num2}"
     result = eval(num3)
     print (f'Question: {num3}')
     user_answer = prompt.string("Your answer: ")
