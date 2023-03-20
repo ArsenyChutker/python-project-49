@@ -29,7 +29,7 @@ def welcome_user():
 def play_round(win_count):
     a = (random.randint(0, 100))
     b = (random.randint(0, 100))
-    while a != b:
+    while a!=b:
         if a > b:
             a -= b
         else:
