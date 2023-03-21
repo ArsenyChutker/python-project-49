@@ -1,23 +1,24 @@
 import prompt
-from random import randint
 import random
+
 
 def main():
     print("Welcome to the Brain Games!")
     name = welcome_user()
-    print ('Answer "yes" if given number is prime, Otherwise answer "no"')
+    print('Answer "yes" if given number is prime, Otherwise answer "no".')
     win_count = 0
     while win_count < 3:
         win_count = play_round(win_count)
-        if(win_count == -1):
-            print (f"""'yes' is wrong answer ;(. Correct answer was 'no'.
+        if (win_count == -1):
+            print(f"""'yes' is wrong answer ;(. Correct answer was 'no'.
 Let's try again, {name}!""")
             break
-    
-    if(win_count == 3):
-        print(f"""Congratulations, {name}""")
+
+    if (win_count == 3):
+        print(f"""Congratulations, {name}!""")
     return
-    
+
+
 def welcome_user():
     name = prompt.string('May I have your name? ')
     print(f"Hello, {name}!")
@@ -25,15 +26,16 @@ def welcome_user():
 
 
 def play_round(win_count):
-    random_number = (random.randint(0,100))
-    print (f"Question: {random_number}")
+    random_number = (random.randint(0, 100))
+    print(f"Question: {random_number}")
     user_answer = prompt.string("Your answer: ")
-    our_answer =  Prime_or_not(random_number)
+    our_answer = Prime_or_not(random_number)
     if our_answer == user_answer:
-        print ('Correct!')
+        print('Correct!')
         return win_count + 1
     else:
         return -1
+
 
 def checkPrime(num):
     if num < 2:
@@ -42,7 +44,7 @@ def checkPrime(num):
         if num % i == 0:
             return False
     return True
-    
+
 
 def Prime_or_not(num):
     if checkPrime(num):
