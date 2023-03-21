@@ -27,15 +27,15 @@ def welcome_user():
 
 
 def play_round(win_count):
-    number1 = (random.randint(0, 100))
-    number2 = (random.randint(0, 100))
+    a = (random.randint(0, 100))
+    b = (random.randint(0, 100))
     while a!=b:
         if a > b:
             a -= b
         else:
             b -= a
     our_answer = b
-    print(f'Question: {number1} {number2}')
+    print(f'Question: {a} {b}')
     user_answer = int(prompt.string("Your answer: "))
     if our_answer == user_answer:
         print('Correct!')
